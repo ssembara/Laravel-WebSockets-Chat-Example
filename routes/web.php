@@ -12,6 +12,8 @@ use App\Events\WebsocketDemoEvent;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
     broadcast(new WebsocketDemoEvent('some data'));
